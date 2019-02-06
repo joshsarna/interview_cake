@@ -11,3 +11,6 @@ def rand5
   end
   result
 end
+
+# No solution can be guaranteed to terminate because there do not exist integers n, m for which 7 ** n = 5 * m
+# This follows from the fundamental theorem of arithmetic, since 5 and 7 are both prime and a number that can be written as a product of n 7s cannot therefore have 5 as a factor
