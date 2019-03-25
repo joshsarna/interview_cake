@@ -7,10 +7,12 @@
   for (var btnNum = 0; btnNum < prizes.length; btnNum++) {
 
     // For each of our buttons, when the user clicks it...
-    document.getElementById(`btn-${btnNum}`).onclick = () => {
+    document.getElementById(`btn-${btnNum}`).onclick = (self) => {
 
       // Tell her what she's won!
-      alert(prizes[btnNum]);
+      alert(prizes[self.path[0].id[4]]); // this grabs the actual id
+      console.log(btnNum); // => 3, always
+      // by the time the user clicks, the javascript loop has already run
     };
   }
 </script>
